@@ -1,0 +1,79 @@
+/* Heading */
+.HeadingHome{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 140px;
+    font-weight: bold;
+    color: #ffffff;
+    /* Position */
+    position: absolute;
+    top: 0%;
+}
+
+/* Button For Operator */
+.ButtonOperator{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 70px;
+    font-weight: bold;
+    color: #000000;
+    /* Button */
+    background-color: #C1C6C8 !important; /* button color */
+    height: 175px;
+    width: 550px;
+    border-radius: 100px 100px 100px 100px;
+    border: none;
+    cursor: pointer;
+    /* Position */
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+
+/* Button For Passenger */
+.ButtonPassenger{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 70px;
+    font-weight: bold;
+    color: #000000;
+    /* Button */
+    background-color: #C1C6C8 !important; /* button color */
+    height: 175px;
+    width: 550px;
+    border-radius: 100px 100px 100px 100px;
+    border: none;
+    cursor: pointer;
+    /* Position */
+    position: absolute;
+    top: 50%;
+}
+
+/* Button For Sponsor */
+.ButtonSponsor{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 70px;
+    font-weight: bold;
+    color: #000000;
+    /* Button */
+    background-color: #C1C6C8 !important; /* button color */ 
+    height: 175px;
+    width: 550px;
+    border-radius: 100px 100px 100px 100px;
+    border: none;
+    cursor: pointer;
+    /* Position */
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+/* Home Page Background */
+.HomePageContainer{
+    background-color: #5D1725;
+    height: 100vh;
+    width: 100vw;
+    display: flex;  /* used to adjust for other resolutions */
+    justify-content: center;
+    align-items: center;
+}
