@@ -11,6 +11,11 @@
     position: absolute;
     top: 78%;
     left: 10%;
+    /* Image*/
+    background-image: url("../assets/user.png"); /* image: Flaticon.com Freepik */
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Map Button */
@@ -26,6 +31,11 @@
     position: absolute;
     top: 78%;
     left: 25%;
+    /* Image*/
+    background-image: url("../assets/map.png"); /* image: Flaticon.com Pixel Perfect */
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* System Button */
@@ -41,6 +51,11 @@
     position: absolute;
     top: 78%;
     left: 40%;
+    /* Image*/
+    background-image: url("../assets/sysDiag.png"); /* image: Flaticon.com Gravisio */
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Camera Button */
@@ -56,6 +71,11 @@
     position: absolute;
     top: 78%;
     left: 55%;
+    /* Image*/
+    background-image: url("../assets/camera.png"); /* image: Flaticon.com Freepik */
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Sensory Button */
@@ -71,6 +91,11 @@
     position: absolute;
     top: 78%;
     left: 70%;
+    /* Image*/
+    background-image: url("../assets/eye.png"); /* image: Flaticon.com Gregor Cresnar */
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Operator Page Background Color*/

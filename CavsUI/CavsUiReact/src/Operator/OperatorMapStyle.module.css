@@ -1,103 +1,135 @@
 /* Banner */
 .OperatorBanner{
-    /* Font */
+    /* Text */
     font-family: 'Arial';
-    font-size: 20px;
+    font-size: 80px;
     font-weight: bold;
     color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* Dimensions */
-    width: 1920px;
-    height: 120px;
+    width: 100%;
+    height: 12.7%;
     position: absolute;
+    z-index: 2;
     top: 0%;
     border-radius: 0px 100px 100px 0px; /* top-left, top-right, bottom-right, bottom-left */
     /* Color */
     background-color: #C1C6C8;
 }
 
-/*  Sub Banner */
-.OperatorSubBanner{
-    /* Font */
+/*  Diagnostics */
+.OperatorBoxDiag{
+    /* Text */
     font-family: 'Arial';
     font-size: 20px;
     font-weight: bold;
-    color: #000000;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
     /* Dimensions */
-    width: 960px;
-    height: 115px;
+    width: 50%;
+    height: 10%;
     position: absolute;
+    z-index: 3;
+    top: 66.5%;
+    left: 7%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+/* Diagnostics New Line*/
+.OperatorDiagText{
+    /* Text */
+    word-spacing: 200%;
+    font-family: 'Arial';
+    font-size: 40px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 17%;
+}
+
+/* Speedometer */
+.OperatorSpd{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 80px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    /* Dimensions */
+    width: 22%;
+    height: 12%;
+    position: absolute;
+    z-index: 3;
     top: .25%;
-    left: .1%;
+    left: 0%;
+    border-color: #ffffff;
     border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
     /* Color */
     background-color: #5D1725;
 }
 
 /* GPS */
-.OperatorBox1{ /* Rename Boxes */
+.OperatorBoxGPS{ /* Rename Boxes */
     /* Font */
     font-family: 'Arial';
     font-size: 20px;
     font-weight: bold;
     color: #000000;
     /* Dimensions */
-    width: 960px;
-    height: 600px;
+    width: 69.5%;
+    height: 52%;
     position: absolute;
-    top: 12%;
+    z-index: 0;
+    top: 13.5%;
     left: 0%;
     /* Color */
-    background-color: #ffffff;
+    background-color: #C1C6C8;
 }
 
 /* Camera */
-.OperatorBox2{
+.OperatorBoxCam{
     /* Font */
     font-family: 'Arial';
     font-size: 20px;
     font-weight: bold;
     color: #000000;
     /* Dimensions */
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 32%;
     position: absolute;
-    top: 50%;
-    right: .1%;
+    top: 13.5%;
+    left: 70%;
     /* Color */
-    background-color: #23a744;
+    z-index:0;
+    background-color: #C1C6C8;
 }
 
 /* Local Path */
-.OperatorBox3{
+.OperatorBoxPath{
     /* Font */
     font-family: 'Arial';
     font-size: 20px;
     font-weight: bold;
     color: #000000;
     /* Dimensions */
-    width: 960px;
-    height: 115px;
+    width: 30%;
+    height: 30%;
     position: absolute;
-    top: .25%;
-    left: .1%;
+    top: 46.5%;
+    left: 70%;
     /* Color */
-    background-color: #5D1725;
-}
-
-/* Speedometer */
-.OperatorSpeed{
-    /* Font */
-    font-family: 'Arial';
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-    /* Dimensions */
-    width: 960px;
-    height: 115px;
-    position: absolute;
-    top: .25%;
-    left: .1%;
-    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
-    /* Color */
-    background-color: #5D1725;
+    background-color: #C1C6C8;
 }

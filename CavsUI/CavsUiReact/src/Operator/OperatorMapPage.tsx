@@ -28,12 +28,13 @@ function Operator() {
         className={styles.OperatorButtonSens}
         onClick={() => navigate("/")}
       ></button>
-      <div className={shapes.OperatorBanner}></div>
-      <div className={shapes.OperatorSubBanner}></div>
-      <div className={shapes.OperatorBox1}></div>
-      <div className={shapes.OperatorSubBox2}></div>
-      <div className={shapes.OperatorBox3}></div>
-      <div className={shapes.OperatorSpeed}></div>
+      <div className={shapes.OperatorBanner}>Operator</div>
+      <div className={shapes.OperatorBoxDiag}>System Diagnostics</div>
+      <div className={shapes.OperatorDiagText}>LIDAR Camera GPS</div>
+      <div className={shapes.OperatorBoxGPS}></div>
+      <div className={shapes.OperatorBoxCam}></div>
+      <div className={shapes.OperatorBoxPath}></div>
+      <div className={shapes.OperatorSpd}>mph</div>
     </div>
   );
 }
