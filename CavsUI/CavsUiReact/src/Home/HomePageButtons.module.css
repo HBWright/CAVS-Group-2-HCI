@@ -7,7 +7,7 @@
     color: #ffffff;
     /* Position */
     position: absolute;
-    top: 0%;
+    top: 15%;
 }
 
 /* Button For Operator */
@@ -18,7 +18,7 @@
     font-weight: bold;
     color: #000000;
     /* Button */
-    background-color: #C1C6C8 !important; /* button color */
+    background-color: #C1C6C8; /* button color */
     height: 175px;
     width: 550px;
     border-radius: 100px 100px 100px 100px;
@@ -26,7 +26,7 @@
     cursor: pointer;
     /* Position */
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 2%;
 }
 
@@ -38,7 +38,7 @@
     font-weight: bold;
     color: #000000;
     /* Button */
-    background-color: #C1C6C8 !important; /* button color */
+    background-color: #C1C6C8; /* button color */
     height: 175px;
     width: 550px;
     border-radius: 100px 100px 100px 100px;
@@ -46,7 +46,7 @@
     cursor: pointer;
     /* Position */
     position: absolute;
-    top: 50%;
+    top: 55%;
 }
 
 /* Button For Sponsor */
@@ -57,7 +57,7 @@
     font-weight: bold;
     color: #000000;
     /* Button */
-    background-color: #C1C6C8 !important; /* button color */ 
+    background-color: #C1C6C8; /* button color */ 
     height: 175px;
     width: 550px;
     border-radius: 100px 100px 100px 100px;
@@ -65,10 +65,25 @@
     cursor: pointer;
     /* Position */
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 2%;
 }
-/* Home Page Background */
+
+/*  */
+.ButtonActive{
+    background-color: #777777;
+}
+
+/* Home Page Cavs Logo*/
+.HomePageLogo{
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    top: 2%;
+    object-fit: contain;
+}
+
+/* Home Page Background Color*/
 .HomePageContainer{
     background-color: #5D1725;
     height: 100vh;
