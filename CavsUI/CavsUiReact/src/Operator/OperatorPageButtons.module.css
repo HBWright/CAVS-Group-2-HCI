@@ -107,3 +107,8 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Active Button Color */
+.ButtonActive{
+    background-color: #737577;
+}

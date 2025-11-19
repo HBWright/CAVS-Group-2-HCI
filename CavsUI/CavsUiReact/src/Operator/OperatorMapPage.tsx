@@ -13,8 +13,8 @@ function Operator() {
         onClick={() => navigate("/")}
       ></button>
       <button
-        className={styles.OperatorButtonMap}
-        onClick={() => navigate("/")}
+        className={`${styles.OperatorButtonMap} 
+      ${styles.ButtonActive}`}
       ></button>
       <button
         className={styles.OperatorButtonSys}
