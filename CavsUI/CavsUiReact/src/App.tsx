@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home/HomePage";
-import Operator from "./Operator/OperatorPage";
+import Operator from "./Operator/OperatorMapPage";
 import Passenger from "./Passenger/PassengerPage";
 import Sponsor from "./Sponsor/SponsorPage";
 

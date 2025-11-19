@@ -1,0 +1,103 @@
+/* Banner */
+.OperatorBanner{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 1920px;
+    height: 120px;
+    position: absolute;
+    top: 0%;
+    border-radius: 0px 100px 100px 0px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #C1C6C8;
+}
+
+/*  Sub Banner */
+.OperatorSubBanner{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 960px;
+    height: 115px;
+    position: absolute;
+    top: .25%;
+    left: .1%;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+
+/* GPS */
+.OperatorBox1{ /* Rename Boxes */
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 960px;
+    height: 600px;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    /* Color */
+    background-color: #ffffff;
+}
+
+/* Camera */
+.OperatorBox2{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: .1%;
+    /* Color */
+    background-color: #23a744;
+}
+
+/* Local Path */
+.OperatorBox3{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 960px;
+    height: 115px;
+    position: absolute;
+    top: .25%;
+    left: .1%;
+    /* Color */
+    background-color: #5D1725;
+}
+
+/* Speedometer */
+.OperatorSpeed{
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 960px;
+    height: 115px;
+    position: absolute;
+    top: .25%;
+    left: .1%;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
