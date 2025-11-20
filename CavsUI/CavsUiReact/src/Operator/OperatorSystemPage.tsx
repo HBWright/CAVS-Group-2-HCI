@@ -29,6 +29,10 @@ function OperatorSys() {
         onClick={() => navigate("/operatorSens")}
       ></button>
       <div className={shapes.OperatorBanner}>System Status</div>
+      <div className={shapes.OperatorSpd}>mph</div>
+      <div className={shapes.OperatorSysBoxPlan}>Mapping & Planning</div>
+      <div className={shapes.OperatorSysBoxCrtl}>Control</div>
+      <div className={shapes.OperatorSysBoxPerc}>Perception</div>
     </div>
   );
 }

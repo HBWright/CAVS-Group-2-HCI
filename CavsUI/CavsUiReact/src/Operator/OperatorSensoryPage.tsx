@@ -29,6 +29,7 @@ function OperatorSens() {
       ${styles.ButtonActive}`}
       ></button>
       <div className={shapes.OperatorBanner}>Sensory Data</div>
+      <div className={shapes.OperatorSpd}>mph</div>
     </div>
   );
 }

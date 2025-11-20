@@ -29,6 +29,7 @@ function OperatorCam() {
         onClick={() => navigate("/operatorSens")}
       ></button>
       <div className={shapes.OperatorBanner}>Camera</div>
+      <div className={shapes.OperatorSpd}>mph</div>
     </div>
   );
 }

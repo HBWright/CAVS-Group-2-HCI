@@ -101,7 +101,7 @@
 
 /* Camera */
 .OperatorBoxCam{
-    /* Font */
+    /* Text */
     font-family: 'Arial';
     font-size: 20px;
     font-weight: bold;
@@ -132,4 +132,70 @@
     left: 70%;
     /* Color */
     background-color: #C1C6C8;
+}
+
+/* Perception */
+.OperatorSysBoxPerc{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 50px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 49.35%;
+    height: 63%;
+    position: absolute;
+    z-index: 3;
+    top: 13.5%;
+    left: .25%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+
+/* Mapping and Planning */
+.OperatorSysBoxCrtl{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 50px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 49.35%;
+    height: 30.75%;
+    position: absolute;
+    z-index: 3;
+    top: 45.75%;
+    right: .25%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+
+/* Control */
+.OperatorSysBoxPlan{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 50px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 49.35%;
+    height: 30.75%;
+    position: absolute;
+    z-index: 3;
+    top: 13.5%;
+    right: .25%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
 }
