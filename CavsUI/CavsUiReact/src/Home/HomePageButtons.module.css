@@ -5,6 +5,7 @@
     font-size: 140px;
     font-weight: bold;
     color: #ffffff;
+    -webkit-text-stroke: 3px black;
     /* Position */
     position: absolute;
     top: 15%;

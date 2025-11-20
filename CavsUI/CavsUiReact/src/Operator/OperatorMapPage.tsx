@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./OperatorPageButtons.module.css";
 import shapes from "./OperatorMapStyle.module.css";
 
-function Operator() {
+function OperatorMap() {
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -18,15 +18,15 @@ function Operator() {
       ></button>
       <button
         className={styles.OperatorButtonSys}
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/operatorSys")}
       ></button>
       <button
         className={styles.OperatorButtonCam}
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/operatorCam")}
       ></button>
       <button
         className={styles.OperatorButtonSens}
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/operatorSens")}
       ></button>
       <div className={shapes.OperatorBanner}>Operator</div>
       <div className={shapes.OperatorBoxDiag}>System Diagnostics</div>
@@ -38,4 +38,4 @@ function Operator() {
     </div>
   );
 }
-export default Operator;
+export default OperatorMap;

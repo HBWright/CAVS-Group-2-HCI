@@ -18,7 +18,7 @@ function Home() {
       <button
         className={`${styles.ButtonOperator}
         ${activeButton === "operator" ? styles.ButtonActive : ""}`}
-        onClick={() => handleClick("operator", "/operator")}
+        onClick={() => handleClick("operatorMap", "/operatorMap")}
       >
         Operator
       </button>
