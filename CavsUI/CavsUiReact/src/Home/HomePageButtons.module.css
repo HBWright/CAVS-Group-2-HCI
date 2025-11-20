@@ -91,4 +91,8 @@
     display: flex;  /* used to adjust for other resolutions */
     justify-content: center;
     align-items: center;
+    background-image: url("../assets/cavs_background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
