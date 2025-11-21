@@ -30,6 +30,14 @@ function OperatorSens() {
       ></button>
       <div className={shapes.OperatorBanner}>Sensory Data</div>
       <div className={shapes.OperatorSpd}>mph</div>
+      <div className={shapes.OperatorSensBox1}></div>
+      <div className={shapes.OperatorSensBox2}></div>
+      <div className={shapes.OperatorSensBox3}></div>
+      <div className={shapes.OperatorSensBox4}></div>
+      <div className={shapes.OperatorSenBox1Title}></div>
+      <div className={shapes.OperatorSenBox2Title}></div>
+      <div className={shapes.OperatorSenBox3Title}></div>
+      <div className={shapes.OperatorSenBox4Title}></div>
     </div>
   );
 }

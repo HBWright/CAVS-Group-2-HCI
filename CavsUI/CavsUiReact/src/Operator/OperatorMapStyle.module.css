@@ -209,7 +209,7 @@
     color: #000000;
     /* Dimensions */
     width: 40%;
-    height: 63%;
+    height: 63.5%;
     position: absolute;
     top: 13.5%;
     left: 60%;
@@ -257,6 +257,7 @@
     /* Color */
     background-color: #5D1725;
 }
+
 /* Diagnostics New Line (Camera Page) */
 .OperatorCamDiagText{
     /* Text */
@@ -272,4 +273,144 @@
     z-index: 3;
     top: 70%;
     left: 14%;
+}
+
+/*  unknown Box 1 (Sensory Page) */
+.OperatorSensBox1{
+    /* Dimensions */
+    width: 24.5%;
+    height: 52.15%;
+    position: absolute;
+    z-index: 0;
+    top: 24.85%;
+    left: 0%;
+    /* Color */
+    background-color: #C1C6C8;
+}
+
+/*  Box 1 Title (Sensory Page) */
+.OperatorSenBox1Title{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    z-index: 3;
+    top: 13.5%;
+    left: 2%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+
+/*  unknown Box 2 (Sensory Page) */
+.OperatorSensBox2{
+    /* Dimensions */
+    width: 24.5%;
+    height: 52.15%;
+    position: absolute;
+    z-index: 0;
+    top: 24.85%;
+    left: 25.15%;
+    /* Color */
+    background-color: #C1C6C8;
+}
+
+/*  Box 2 Title (Sensory Page) */
+.OperatorSenBox2Title{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    z-index: 3;
+    top: 13.5%;
+    left: 27.5%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+
+/*  unknown Box 3 (Sensory Page) */
+.OperatorSensBox3{
+    /* Dimensions */
+    width: 24.5%;
+    height: 52.15%;
+    position: absolute;
+    z-index: 0;
+    top: 24.85%;
+    right: 25.15%;
+    /* Color */
+    background-color: #C1C6C8;
+}
+
+/*  Box 3 Title (Sensory Page) */
+.OperatorSenBox3Title{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    z-index: 3;
+    top: 13.5%;
+    right: 27.5%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+
+/*  unknown Box 4 (Sensory Page) */
+.OperatorSensBox4{
+    /* Dimensions */
+    width: 24.5%;
+    height: 52.15%;
+    position: absolute;
+    z-index: 0;
+    top: 24.85%;
+    right: 0%;
+    /* Color */
+    background-color: #C1C6C8;
+}
+
+/*  Box 4 Title (Sensory Page) */
+.OperatorSenBox4Title{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    z-index: 3;
+    top: 13.5%;
+    right: 2%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
 }
