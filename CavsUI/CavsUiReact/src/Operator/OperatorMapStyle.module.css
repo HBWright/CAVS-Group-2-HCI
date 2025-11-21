@@ -199,3 +199,77 @@
     /* Color */
     background-color: #5D1725;
 }
+
+/* Camera  (Camera Page) */
+.OperatorBoxCam2{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 40%;
+    height: 63%;
+    position: absolute;
+    top: 13.5%;
+    left: 60%;
+    /* Color */
+    z-index:0;
+    background-color: #C1C6C8;
+}
+
+/* FrontCam (Camera Page) */
+.OperatorBoxCamFront{ /* Rename Boxes */
+    /* Font */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* Dimensions */
+    width: 59.5%;
+    height: 52%;
+    position: absolute;
+    z-index: 0;
+    top: 13.5%;
+    left: 0%;
+    /* Color */
+    background-color: #C1C6C8;
+}
+
+/*  Diagnostics (Camera Page) */
+.OperatorCamBoxDiag{
+    /* Text */
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 50%;
+    height: 10%;
+    position: absolute;
+    z-index: 3;
+    top: 66.5%;
+    left: 4%;
+    border: 2px solid #C1C6C8;
+    border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
+    /* Color */
+    background-color: #5D1725;
+}
+/* Diagnostics New Line (Camera Page) */
+.OperatorCamDiagText{
+    /* Text */
+    word-spacing: 200%;
+    font-family: 'Arial';
+    font-size: 40px;
+    font-weight: bold;
+    color: #C1C6C8;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 14%;
+}

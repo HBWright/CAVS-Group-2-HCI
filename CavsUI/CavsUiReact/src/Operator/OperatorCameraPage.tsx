@@ -30,6 +30,10 @@ function OperatorCam() {
       ></button>
       <div className={shapes.OperatorBanner}>Camera</div>
       <div className={shapes.OperatorSpd}>mph</div>
+      <div className={shapes.OperatorCamBoxDiag}>System Diagnostics</div>
+      <div className={shapes.OperatorCamDiagText}>LIDAR Camera GPS</div>
+      <div className={shapes.OperatorBoxCamFront}></div>
+      <div className={shapes.OperatorBoxCam2}></div>
     </div>
   );
 }
