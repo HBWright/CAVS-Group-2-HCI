@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
 import shapes from "./SponsorShapes.module.css";
 
 function SponsorCam() {
+  // Time Grabber
+  const [currentDate, setCurrentDate] = useState(new Date());
+  // Time Updater
+  useEffect(() => {
+    setInterval(() => setCurrentDate(new Date()), 1000);
+  }, []);
+  // Navigation Helper
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -34,6 +41,10 @@ function SponsorCam() {
       <div className={shapes.SponsorCamDiagText}>LIDAR Camera GPS</div>
       <div className={shapes.SponsorBoxCamFront}></div>
       <div className={shapes.SponsorBoxCam2}></div>
+      /* display current date, string improves appearance */
+      <div className={shapes.SponsorDateText}>
+        <p>{currentDate.toLocaleString()}</p>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
 import shapes from "./PassengerShapes.module.css";
 
 function PassengerSys() {
+  // Time Grabber
+  const [currentDate, setCurrentDate] = useState(new Date());
+  // Time Updater
+  useEffect(() => {
+    setInterval(() => setCurrentDate(new Date()), 1000);
+  }, []);
+  // Navigation Helper
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -33,6 +40,10 @@ function PassengerSys() {
       <div className={shapes.PassengerSysBoxPlan}>Mapping & Planning</div>
       <div className={shapes.PassengerSysBoxCrtl}>Control</div>
       <div className={shapes.PassengerSysBoxPerc}>Perception</div>
+      /* display current date, string improves appearance */
+      <div className={shapes.PassengerDateText}>
+        <p>{currentDate.toLocaleString()}</p>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
 import shapes from "./SponsorShapes.module.css";
 
 function SponsorSys() {
+  // Time Grabber
+  const [currentDate, setCurrentDate] = useState(new Date());
+  // Time Updater
+  useEffect(() => {
+    setInterval(() => setCurrentDate(new Date()), 1000);
+  }, []);
+  // Navigation Helper
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -33,6 +40,10 @@ function SponsorSys() {
       <div className={shapes.SponsorSysBoxPlan}>Mapping & Planning</div>
       <div className={shapes.SponsorSysBoxCrtl}>Control</div>
       <div className={shapes.SponsorSysBoxPerc}>Perception</div>
+      /* display current date, string improves appearance */
+      <div className={shapes.SponsorDateText}>
+        <p>{currentDate.toLocaleString()}</p>
+      </div>
     </div>
   );
 }

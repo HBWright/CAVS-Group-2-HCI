@@ -1,12 +1,19 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
 import shapes from "./OperatorShapes.module.css";
 
 function OperatorMap() {
+  // Time Grabber
+  const [currentDate, setCurrentDate] = useState(new Date());
+  // Time Updater
+  useEffect(() => {
+    setInterval(() => setCurrentDate(new Date()), 1000);
+  }, []);
+  // Navigation Helper
   const navigate = useNavigate();
   return (
-    /* Buttons */
+    /* Buttons For Page navigation */
     <div className={styles.ProfilePageContainer}>
       <button
         className={styles.ProfileButtonHome}
@@ -35,6 +42,10 @@ function OperatorMap() {
       <div className={shapes.OperatorBoxCam}></div>
       <div className={shapes.OperatorBoxPath}></div>
       <div className={shapes.OperatorSpd}>mph</div>
+      /* display current date, string improves appearance */
+      <div className={shapes.OperatorDateText}>
+        <p>{currentDate.toLocaleString()}</p>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
 import shapes from "./OperatorShapes.module.css";
 
 function OperatorSys() {
+  // Time Grabber
+  const [currentDate, setCurrentDate] = useState(new Date());
+  // Time Updater
+  useEffect(() => {
+    setInterval(() => setCurrentDate(new Date()), 1000);
+  }, []);
+  // Navigation Helper
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -33,6 +40,10 @@ function OperatorSys() {
       <div className={shapes.OperatorSysBoxPlan}>Mapping & Planning</div>
       <div className={shapes.OperatorSysBoxCrtl}>Control</div>
       <div className={shapes.OperatorSysBoxPerc}>Perception</div>
+      /* display current date, string improves appearance */
+      <div className={shapes.OperatorDateText}>
+        <p>{currentDate.toLocaleString()}</p>
+      </div>
     </div>
   );
 }

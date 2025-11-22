@@ -57,6 +57,23 @@
     left: 17%;
 }
 
+/* Diagnostics New Line*/
+.OperatorDateText{
+    /* Text */
+    word-spacing: 20%;
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    position: absolute;
+    z-index: 3;
+    top: 2%;
+    right: 3%;
+}
+
 /* Speedometer */
 .OperatorSpd{
     /* Text */

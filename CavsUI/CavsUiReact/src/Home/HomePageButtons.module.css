@@ -25,6 +25,7 @@
     border-radius: 100px 100px 100px 100px;
     border: none;
     cursor: pointer;
+    box-shadow: 5px 5px 5px #000000;
     /* Position */
     position: absolute;
     top: 55%;
@@ -45,6 +46,7 @@
     border-radius: 100px 100px 100px 100px;
     border: none;
     cursor: pointer;
+    box-shadow: 5px 5px 5px #000000;
     /* Position */
     position: absolute;
     top: 55%;
@@ -64,6 +66,7 @@
     border-radius: 100px 100px 100px 100px;
     border: none;
     cursor: pointer;
+    box-shadow: 5px 5px 5px #000000;
     /* Position */
     position: absolute;
     top: 55%;
