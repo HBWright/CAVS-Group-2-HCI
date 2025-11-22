@@ -1,24 +1,24 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
-import shapes from "./OperatorShapes.module.css";
+import shapes from "./PassengerShapes.module.css";
 
-function OperatorCam() {
+function PassengerCam() {
   const navigate = useNavigate();
   return (
     /* Buttons */
-    <div className={styles.OperatorPageContainer}>
+    <div className={styles.ProfilePageContainer}>
       <button
         className={styles.ProfileButtonHome}
         onClick={() => navigate("/")}
       ></button>
       <button
         className={styles.ProfileButtonMap}
-        onClick={() => navigate("/operatorMap")}
+        onClick={() => navigate("/PassengerMap")}
       ></button>
       <button
         className={styles.ProfileButtonSys}
-        onClick={() => navigate("/operatorSys")}
+        onClick={() => navigate("/PassengerSys")}
       ></button>
       <button
         className={`${styles.ProfileButtonCam} 
@@ -26,15 +26,15 @@ function OperatorCam() {
       ></button>
       <button
         className={styles.ProfileButtonSens}
-        onClick={() => navigate("/operatorSens")}
+        onClick={() => navigate("/PassengerSens")}
       ></button>
-      <div className={shapes.OperatorBanner}>Camera</div>
-      <div className={shapes.OperatorSpd}>mph</div>
-      <div className={shapes.OperatorCamBoxDiag}>System Diagnostics</div>
-      <div className={shapes.OperatorCamDiagText}>LIDAR Camera GPS</div>
-      <div className={shapes.OperatorBoxCamFront}></div>
-      <div className={shapes.OperatorBoxCam2}></div>
+      <div className={shapes.PassengerBanner}>Camera</div>
+      <div className={shapes.PassengerSpd}>mph</div>
+      <div className={shapes.PassengerCamBoxDiag}>System Diagnostics</div>
+      <div className={shapes.PassengerCamDiagText}>LIDAR Camera GPS</div>
+      <div className={shapes.PassengerBoxCamFront}></div>
+      <div className={shapes.PassengerBoxCam2}></div>
     </div>
   );
 }
-export default OperatorCam;
+export default PassengerCam;

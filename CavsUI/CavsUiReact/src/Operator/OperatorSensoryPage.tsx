@@ -1,31 +1,31 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import styles from "./OperatorPageButtons.module.css";
-import shapes from "./OperatorMapStyle.module.css";
+import styles from "../components/ProfilePageButtons.module.css";
+import shapes from "./OperatorShapes.module.css";
 
 function OperatorSens() {
   const navigate = useNavigate();
   return (
     /* Buttons */
-    <div className={styles.OperatorPageContainer}>
+    <div className={styles.ProfilePageContainer}>
       <button
-        className={styles.OperatorButtonHome}
+        className={styles.ProfileButtonHome}
         onClick={() => navigate("/")}
       ></button>
       <button
-        className={styles.OperatorButtonMap}
+        className={styles.ProfileButtonMap}
         onClick={() => navigate("/operatorMap")}
       ></button>
       <button
-        className={styles.OperatorButtonSys}
+        className={styles.ProfileButtonSys}
         onClick={() => navigate("/operatorSys")}
       ></button>
       <button
-        className={styles.OperatorButtonCam}
+        className={styles.ProfileButtonCam}
         onClick={() => navigate("/operatorCam")}
       ></button>
       <button
-        className={`${styles.OperatorButtonSens} 
+        className={`${styles.ProfileButtonSens} 
       ${styles.ButtonActive}`}
       ></button>
       <div className={shapes.OperatorBanner}>Sensory Data</div>

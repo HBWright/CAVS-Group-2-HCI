@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
-import shapes from "./OperatorShapes.module.css";
+import shapes from "./SponsorShapes.module.css";
 
-function OperatorSys() {
+function SponsorSys() {
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -14,26 +14,26 @@ function OperatorSys() {
       ></button>
       <button
         className={styles.ProfileButtonMap}
-        onClick={() => navigate("/operatorMap")}
+        onClick={() => navigate("/SponsorMap")}
       ></button>
       <button
-        className={`${styles.ProfileButtonSys}
-        ${styles.ButtonActive}`}
+        className={`${styles.ProfileButtonSys} 
+      ${styles.ButtonActive}`}
       ></button>
       <button
         className={styles.ProfileButtonCam}
-        onClick={() => navigate("/operatorCam")}
+        onClick={() => navigate("/SponsorCam")}
       ></button>
       <button
         className={styles.ProfileButtonSens}
-        onClick={() => navigate("/operatorSens")}
+        onClick={() => navigate("/SponsorSens")}
       ></button>
-      <div className={shapes.OperatorBanner}>System Status</div>
-      <div className={shapes.OperatorSpd}>mph</div>
-      <div className={shapes.OperatorSysBoxPlan}>Mapping & Planning</div>
-      <div className={shapes.OperatorSysBoxCrtl}>Control</div>
-      <div className={shapes.OperatorSysBoxPerc}>Perception</div>
+      <div className={shapes.SponsorBanner}>System Status</div>
+      <div className={shapes.SponsorSpd}>mph</div>
+      <div className={shapes.SponsorSysBoxPlan}>Mapping & Planning</div>
+      <div className={shapes.SponsorSysBoxCrtl}>Control</div>
+      <div className={shapes.SponsorSysBoxPerc}>Perception</div>
     </div>
   );
 }
-export default OperatorSys;
+export default SponsorSys;

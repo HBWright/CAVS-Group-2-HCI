@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import styles from "../components/ProfilePageButtons.module.css";
-import shapes from "./OperatorShapes.module.css";
+import shapes from "./PassengerShapes.module.css";
 
-function OperatorMap() {
+function PassengerMap() {
   const navigate = useNavigate();
   return (
     /* Buttons */
@@ -18,24 +18,24 @@ function OperatorMap() {
       ></button>
       <button
         className={styles.ProfileButtonSys}
-        onClick={() => navigate("/operatorSys")}
+        onClick={() => navigate("/PassengerSys")}
       ></button>
       <button
         className={styles.ProfileButtonCam}
-        onClick={() => navigate("/operatorCam")}
+        onClick={() => navigate("/PassengerCam")}
       ></button>
       <button
         className={styles.ProfileButtonSens}
-        onClick={() => navigate("/operatorSens")}
+        onClick={() => navigate("/PassengerSens")}
       ></button>
-      <div className={shapes.OperatorBanner}>Operator</div>
-      <div className={shapes.OperatorBoxDiag}>System Diagnostics</div>
-      <div className={shapes.OperatorDiagText}>LIDAR Camera GPS</div>
-      <div className={shapes.OperatorBoxGPS}></div>
-      <div className={shapes.OperatorBoxCam}></div>
-      <div className={shapes.OperatorBoxPath}></div>
-      <div className={shapes.OperatorSpd}>mph</div>
+      <div className={shapes.PassengerBanner}>Passenger</div>
+      <div className={shapes.PassengerBoxDiag}>System Diagnostics</div>
+      <div className={shapes.PassengerDiagText}>LIDAR Camera GPS</div>
+      <div className={shapes.PassengerBoxGPS}></div>
+      <div className={shapes.PassengerBoxCam}></div>
+      <div className={shapes.PassengerBoxPath}></div>
+      <div className={shapes.PassengerSpd}>mph</div>
     </div>
   );
 }
-export default OperatorMap;
+export default PassengerMap;

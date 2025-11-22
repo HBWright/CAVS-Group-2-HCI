@@ -1,5 +1,5 @@
 /* Home Button */
-.OperatorButtonHome{
+.ProfileButtonHome{
     /* Button */
     background-color: #C1C6C8; /* button color */ 
     height: 175px;
@@ -19,7 +19,7 @@
 }
 
 /* Map Button */
-.OperatorButtonMap{
+.ProfileButtonMap{
     /* Button */
     background-color: #C1C6C8; /* button color */ 
     height: 175px;
@@ -39,7 +39,7 @@
 }
 
 /* System Button */
-.OperatorButtonSys{
+.ProfileButtonSys{
     /* Button */
     background-color: #C1C6C8; /* button color */ 
     height: 175px;
@@ -59,7 +59,7 @@
 }
 
 /* Camera Button */
-.OperatorButtonCam{
+.ProfileButtonCam{
     /* Button */
     background-color: #C1C6C8; /* button color */ 
     height: 175px;
@@ -79,7 +79,7 @@
 }
 
 /* Sensory Button */
-.OperatorButtonSens{
+.ProfileButtonSens{
     /* Button */
     background-color: #C1C6C8; /* button color */ 
     height: 175px;
@@ -98,8 +98,8 @@
     background-position: center;
 }
 
-/* Operator Page Background Color*/
-.OperatorPageContainer{
+/* Profile Page Background Color*/
+.ProfilePageContainer{
     background-color: #1f1f1f;
     height: 100vh;
     width: 100vw;

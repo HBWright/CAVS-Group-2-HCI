@@ -25,14 +25,14 @@ function Home() {
       <button
         className={`${styles.ButtonPassenger}
         ${activeButton === "passenger" ? styles.ButtonActive : ""}`}
-        onClick={() => handleClick("passenger", "/passenger")}
+        onClick={() => handleClick("passengerMap", "/passengerMap")}
       >
         Passenger
       </button>
       <button
         className={`${styles.ButtonSponsor}
         ${activeButton === "sponsor" ? styles.ButtonActive : ""}`}
-        onClick={() => handleClick("sponsor", "/sponsor")}
+        onClick={() => handleClick("sponsorMap", "/sponsorMap")}
       >
         Sponsor
       </button>
