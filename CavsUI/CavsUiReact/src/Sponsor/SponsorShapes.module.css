@@ -70,12 +70,13 @@
     padding-right: 40px;
     /* Dimensions */
     width: 22%;
-    height: 12%;
+    height: 11.75%;
     position: absolute;
     z-index: 3;
     top: .25%;
-    left: 0%;
+    left: .1%;
     border-color: #ffffff;
+    border: 2px solid #000000;
     border-radius: 100px 100px 100px 100px; /* top-left, top-right, bottom-right, bottom-left */
     /* Color */
     background-color: #5D1725;
