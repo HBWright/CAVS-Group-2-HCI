@@ -45,7 +45,6 @@ function OperatorSens() {
       <div className={shapes.OperatorSenBox2Title}></div>
       <div className={shapes.OperatorSenBox3Title}></div>
       <div className={shapes.OperatorSenBox4Title}></div>
-      /* display current date, string improves appearance */
       <div className={shapes.OperatorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

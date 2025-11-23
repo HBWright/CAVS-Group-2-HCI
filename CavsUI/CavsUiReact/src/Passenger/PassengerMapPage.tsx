@@ -42,7 +42,6 @@ function PassengerMap() {
       <div className={shapes.PassengerBoxCam}></div>
       <div className={shapes.PassengerBoxPath}></div>
       <div className={shapes.PassengerSpd}>mph</div>
-      /* display current date, string improves appearance */
       <div className={shapes.PassengerDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

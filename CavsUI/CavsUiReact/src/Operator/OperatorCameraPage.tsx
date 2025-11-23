@@ -41,7 +41,6 @@ function OperatorCam() {
       <div className={shapes.OperatorCamDiagText}>LIDAR Camera GPS</div>
       <div className={shapes.OperatorBoxCamFront}></div>
       <div className={shapes.OperatorBoxCam2}></div>
-      /* display current date, string improves appearance */
       <div className={shapes.OperatorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

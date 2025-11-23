@@ -42,7 +42,6 @@ function OperatorMap() {
       <div className={shapes.OperatorBoxCam}></div>
       <div className={shapes.OperatorBoxPath}></div>
       <div className={shapes.OperatorSpd}>mph</div>
-      /* display current date, string improves appearance */
       <div className={shapes.OperatorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

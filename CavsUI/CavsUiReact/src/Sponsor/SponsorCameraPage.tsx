@@ -41,7 +41,6 @@ function SponsorCam() {
       <div className={shapes.SponsorCamDiagText}>LIDAR Camera GPS</div>
       <div className={shapes.SponsorBoxCamFront}></div>
       <div className={shapes.SponsorBoxCam2}></div>
-      /* display current date, string improves appearance */
       <div className={shapes.SponsorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

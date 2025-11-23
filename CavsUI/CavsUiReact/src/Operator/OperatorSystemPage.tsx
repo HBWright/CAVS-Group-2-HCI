@@ -40,7 +40,6 @@ function OperatorSys() {
       <div className={shapes.OperatorSysBoxPlan}>Mapping & Planning</div>
       <div className={shapes.OperatorSysBoxCrtl}>Control</div>
       <div className={shapes.OperatorSysBoxPerc}>Perception</div>
-      /* display current date, string improves appearance */
       <div className={shapes.OperatorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

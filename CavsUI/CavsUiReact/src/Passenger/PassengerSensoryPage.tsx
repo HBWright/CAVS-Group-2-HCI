@@ -45,7 +45,6 @@ function PassengerSens() {
       <div className={shapes.PassengerSenBox2Title}></div>
       <div className={shapes.PassengerSenBox3Title}></div>
       <div className={shapes.PassengerSenBox4Title}></div>
-      /* display current date, string improves appearance */
       <div className={shapes.PassengerDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

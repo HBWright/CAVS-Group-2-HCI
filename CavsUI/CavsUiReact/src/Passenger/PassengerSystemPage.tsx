@@ -40,7 +40,6 @@ function PassengerSys() {
       <div className={shapes.PassengerSysBoxPlan}>Mapping & Planning</div>
       <div className={shapes.PassengerSysBoxCrtl}>Control</div>
       <div className={shapes.PassengerSysBoxPerc}>Perception</div>
-      /* display current date, string improves appearance */
       <div className={shapes.PassengerDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

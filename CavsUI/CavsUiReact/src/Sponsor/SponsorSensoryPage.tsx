@@ -45,7 +45,6 @@ function SponsorSens() {
       <div className={shapes.SponsorSenBox2Title}></div>
       <div className={shapes.SponsorSenBox3Title}></div>
       <div className={shapes.SponsorSenBox4Title}></div>
-      /* display current date, string improves appearance */
       <div className={shapes.SponsorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

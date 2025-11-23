@@ -41,7 +41,6 @@ function PassengerCam() {
       <div className={shapes.PassengerCamDiagText}>LIDAR Camera GPS</div>
       <div className={shapes.PassengerBoxCamFront}></div>
       <div className={shapes.PassengerBoxCam2}></div>
-      /* display current date, string improves appearance */
       <div className={shapes.PassengerDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>

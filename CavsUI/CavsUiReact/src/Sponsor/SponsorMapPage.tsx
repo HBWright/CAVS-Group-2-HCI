@@ -42,7 +42,6 @@ function SponsorMap() {
       <div className={shapes.SponsorBoxCam}></div>
       <div className={shapes.SponsorBoxPath}></div>
       <div className={shapes.SponsorSpd}>mph</div>
-      /* display current date, string improves appearance */
       <div className={shapes.SponsorDateText}>
         <p>{currentDate.toLocaleString()}</p>
       </div>
