@@ -12,7 +12,7 @@ Before running the setup, make sure the following are installed or configured:
   > IMPORTANT: This script does **not** handle OS installation or reboot.  
 - Git  
 - Node.js (ver 20.19+)  
-    - Vite (installed along with newer versions of Node.js)
+  > Vite (installed along with newer versions of Node.js)
 - roslib
 - npm  
 
@@ -42,7 +42,7 @@ npm install roslib @types/roslib
 ```
 npm run dev
 ```
-4. ***Once the app opens up, run the rosbridge_websocket in another terminal window, otherwise the ROS2 nodes from demo file won't be published/subscribed***
+4. ***Once the app opens, run the rosbridge_websocket in another terminal window, otherwise the ROS2 nodes from demo file won't be published/subscribed***
 ```
 cd ros2_jazzy
 source install/setup.bash
