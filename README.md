@@ -56,4 +56,10 @@ cd src
 cd bag_files
 ros2 bag play example_ros2bag.db3 --loop
 ```
+# How To Interact With The Interface
+1. ***Select a Profile***
+   Select a profile using the buttons
+
+2. ***Navigate the Pages with the Buttons***
+   Each profile has it's own pages, if you ever need to go back to the home screen, select the profile button, each button's icon represents what you are navigating to. Each of the pages has the same button setup.
 
