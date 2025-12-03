@@ -157,7 +157,7 @@ function OperatorSys() {
 
       // Title
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 32px Arial';
+      ctx.font = 'bold 50px Arial';
       ctx.fillText('PERCEPTION SUBSYSTEM', 20, 45);
 
       // Health bar
@@ -179,11 +179,11 @@ function OperatorSys() {
       // Camera Status
       ctx.fillStyle = topicStatus.Camera ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 10, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 12, 10, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 20px Arial';
-      ctx.fillText('Camera Feed', 50, yPos + 7);
+      ctx.font = 'bold 50px Arial';
+      ctx.fillText('Camera Feed', 50, yPos + 30);
       if (sensorData.current.Camera) {
         ctx.font = '16px Arial';
         ctx.fillText(`Resolution: ${sensorData.current.Camera.width}x${sensorData.current.Camera.height}`, 250, yPos + 7);
@@ -194,11 +194,11 @@ function OperatorSys() {
       // Lidar Status
       ctx.fillStyle = topicStatus.Lidar ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 10, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 12, 10, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 20px Arial';
-      ctx.fillText('Lidar System', 50, yPos + 7);
+      ctx.font = 'bold 50px Arial';
+      ctx.fillText('Lidar System', 50, yPos + 30);
       if (sensorData.current.Lidar) {
         ctx.font = '16px Arial';
         const points = sensorData.current.Lidar.width * sensorData.current.Lidar.height;
@@ -210,11 +210,11 @@ function OperatorSys() {
       // GPS Status
       ctx.fillStyle = topicStatus.GPS ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 10, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 12, 10, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 20px Arial';
-      ctx.fillText('GPS Receiver', 50, yPos + 7);
+      ctx.font = 'bold 50px Arial';
+      ctx.fillText('GPS Receiver', 50, yPos + 30);
       if (sensorData.current.GPS) {
         ctx.font = '16px Arial';
         ctx.fillText(`Lat: ${sensorData.current.GPS.latitude.toFixed(6)}°`, 250, yPos + 7);
@@ -224,33 +224,33 @@ function OperatorSys() {
 
       // Sensor Fusion Status
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 24px Arial';
-      ctx.fillText('Sensor Fusion', 20, yPos);
-      yPos += 10;
+      ctx.font = 'bold 50px Arial';
+      ctx.fillText('Sensor Fusion', 20, yPos + 40);
+      yPos += 20;
       
       const activeSensors = Object.values(topicStatus).filter(Boolean).length;
       const fusionColor = activeSensors === 4 ? '#00ff00' : 
                          activeSensors >= 2 ? '#ffff00' : '#ff0000';
       ctx.fillStyle = fusionColor;
-      ctx.fillRect(20, yPos, 200, 8);
+      ctx.fillRect(20, yPos + 85, 200, 15);
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = '16px Arial';
-      ctx.fillText(`${activeSensors}/4 sensors active`, 230, yPos + 8);
+      ctx.font = '25px Arial';
+      ctx.fillText(`${activeSensors}/4 sensors active`, 230, yPos + 100);
       yPos += 40;
 
       // Data rates
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 20px Arial';
-      ctx.fillText('Data Throughput', 20, yPos);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Data Throughput', 20, yPos + 30);
       yPos += 25;
-      ctx.font = '16px Arial';
-      ctx.fillText('Camera: ~30 Hz', 40, yPos);
+      ctx.font = '30px Arial';
+      ctx.fillText('Camera: ~30 Hz', 40, yPos + 75);
       yPos += 25;
-      ctx.fillText('Lidar: ~10 Hz', 40, yPos);
+      ctx.fillText('Lidar: ~10 Hz', 40, yPos + 85);
       yPos += 25;
-      ctx.fillText('GPS: ~5 Hz', 40, yPos);
+      ctx.fillText('GPS: ~5 Hz', 40, yPos + 95);
       yPos += 25;
-      ctx.fillText('IMU: ~100 Hz', 40, yPos);
+      ctx.fillText('IMU: ~100 Hz', 40, yPos + 105);
     };
 
     const interval = setInterval(drawPerception, 100);
@@ -270,7 +270,7 @@ function OperatorSys() {
 
       // Title
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 28px Arial';
+      ctx.font = 'bold 40px Arial';
       ctx.fillText('MAPPING & PLANNING', 20, 40);
 
       // Health bar
@@ -292,37 +292,37 @@ function OperatorSys() {
       // Path Planning
       ctx.fillStyle = gpsHistory.current.length > 10 ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 8, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 18px Arial';
-      ctx.fillText('Path Planning', 50, yPos + 5);
-      ctx.font = '14px Arial';
-      ctx.fillText(`Waypoints: ${gpsHistory.current.length}`, 250, yPos + 5);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Path Planning', 50, yPos + 20);
+      ctx.font = '35px Arial';
+      ctx.fillText(`Waypoints: ${gpsHistory.current.length}`, 450, yPos + 20);
       yPos += 40;
 
       // Localization
       ctx.fillStyle = topicStatus.GPS ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 16, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 18px Arial';
-      ctx.fillText('Localization', 50, yPos + 5);
-      ctx.font = '14px Arial';
-      ctx.fillText(topicStatus.GPS ? 'Active' : 'Offline', 250, yPos + 5);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Localization', 50, yPos + 30);
+      ctx.font = '35px Arial';
+      ctx.fillText(topicStatus.GPS ? 'Active' : 'Offline', 450, yPos + 30);
       yPos += 40;
 
       // Obstacle Detection
       ctx.fillStyle = topicStatus.Lidar ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 26, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 18px Arial';
-      ctx.fillText('Obstacle Detection', 50, yPos + 5);
-      ctx.font = '14px Arial';
-      ctx.fillText(topicStatus.Lidar ? 'Scanning' : 'Offline', 250, yPos + 5);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Obstacle Detection', 50, yPos + 40);
+      ctx.font = '35px Arial';
+      ctx.fillText(topicStatus.Lidar ? 'Scanning' : 'Offline', 450, yPos + 40);
     };
 
     const interval = setInterval(drawPlanning, 100);
@@ -342,7 +342,7 @@ function OperatorSys() {
 
       // Title
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 28px Arial';
+      ctx.font = 'bold 40px Arial';
       ctx.fillText('CONTROL SUBSYSTEM', 20, 40);
 
       // Health bar
@@ -364,41 +364,41 @@ function OperatorSys() {
       // Motion Control
       ctx.fillStyle = topicStatus.Imu ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 8, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 18px Arial';
-      ctx.fillText('Motion Control', 50, yPos + 5);
-      ctx.font = '14px Arial';
-      ctx.fillText(`Speed: ${speed.toFixed(1)} mph`, 250, yPos + 5);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Motion Control', 50, yPos + 20);
+      ctx.font = '35px Arial';
+      ctx.fillText(`Speed: ${speed.toFixed(1)} mph`, 450, yPos + 20);
       yPos += 40;
 
       // Stabilization
       ctx.fillStyle = topicStatus.Imu ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 16, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 18px Arial';
-      ctx.fillText('Stabilization', 50, yPos + 5);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Stabilization', 50, yPos + 30);
       if (sensorData.current.Imu && sensorData.current.Imu.orientation) {
         const q = sensorData.current.Imu.orientation;
         const roll = Math.atan2(2 * (q.w * q.x + q.y * q.z), 1 - 2 * (q.x * q.x + q.y * q.y)) * 180 / Math.PI;
-        ctx.font = '14px Arial';
-        ctx.fillText(`Roll: ${roll.toFixed(1)}°`, 250, yPos + 5);
+        ctx.font = '35px Arial';
+        ctx.fillText(`Roll: ${roll.toFixed(1)}°`, 450, yPos + 30);
       }
       yPos += 40;
 
       // Navigation
       ctx.fillStyle = topicStatus.GPS ? '#00ff00' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos + 24, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
-      ctx.font = 'bold 18px Arial';
-      ctx.fillText('Navigation', 50, yPos + 5);
-      ctx.font = '14px Arial';
-      ctx.fillText(topicStatus.GPS ? 'Active' : 'Standby', 250, yPos + 5);
+      ctx.font = 'bold 40px Arial';
+      ctx.fillText('Navigation', 50, yPos + 40);
+      ctx.font = '35px Arial';
+      ctx.fillText(topicStatus.GPS ? 'Active' : 'Standby', 450, yPos + 40);
     };
 
     const interval = setInterval(drawControl, 100);
@@ -439,8 +439,8 @@ function OperatorSys() {
           width={900}
           height={500}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#1a1a1a',
             display: 'block'
           }}
@@ -454,8 +454,8 @@ function OperatorSys() {
           width={900}
           height={500}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#1a1a1a',
             display: 'block'
           }}
@@ -469,8 +469,8 @@ function OperatorSys() {
           width={900}
           height={900}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#1a1a1a',
             display: 'block'
           }}

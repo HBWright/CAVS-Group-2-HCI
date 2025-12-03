@@ -375,8 +375,8 @@ function SponsorSens() {
           width={800}
           height={600}
           style={{ 
-            width: '100%', 
-            height: '100%', 
+            width: '99%', 
+            height: '98.5%', 
             objectFit: 'cover',
             backgroundColor: '#000',
             display: 'block'
@@ -391,8 +391,8 @@ function SponsorSens() {
           width={800}
           height={600}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#0a0a0a',
             display: 'block'
           }}
@@ -406,8 +406,8 @@ function SponsorSens() {
           width={800}
           height={600}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#0a0a0a',
             display: 'block'
           }}
@@ -421,8 +421,8 @@ function SponsorSens() {
           width={800}
           height={600}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#0a0a0a',
             display: 'block'
           }}

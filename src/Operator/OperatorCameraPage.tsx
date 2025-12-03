@@ -201,8 +201,8 @@ function OperatorCam() {
           width={1920}
           height={1080}
           style={{ 
-            width: '100%', 
-            height: '100%', 
+            width: '99%', 
+            height: '98.5%', 
             objectFit: 'cover',
             backgroundColor: '#000',
             display: 'block'
@@ -217,8 +217,8 @@ function OperatorCam() {
           width={800}
           height={600}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#1a1a1a',
             display: 'block'
           }}

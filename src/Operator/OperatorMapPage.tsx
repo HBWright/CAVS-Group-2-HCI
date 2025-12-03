@@ -291,8 +291,8 @@ function OperatorMap() {
           width={1200}
           height={800}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#1a1a1a',
             display: 'block'
           }}
@@ -306,8 +306,8 @@ function OperatorMap() {
           width={640}
           height={480}
           style={{ 
-            width: '100%', 
-            height: '100%', 
+            width: '99%', 
+            height: '98.5%', 
             objectFit: 'cover',
             backgroundColor: '#000',
             display: 'block'
@@ -322,8 +322,8 @@ function OperatorMap() {
           width={600}
           height={600}
           style={{ 
-            width: '100%', 
-            height: '100%',
+            width: '99%', 
+            height: '98.5%',
             backgroundColor: '#1a1a1a',
             display: 'block'
           }}
