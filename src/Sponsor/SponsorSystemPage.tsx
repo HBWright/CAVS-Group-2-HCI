@@ -272,7 +272,7 @@ function SponsorSys() {
       ctx.fillText(`${systemHealth.planning.toFixed(0)}%`, 25, 73);
 
       let yPos = 110;
-
+      
       ctx.fillStyle = gpsHistory.current.length > 10 ? '#00ff00' : '#ff0000';
       ctx.beginPath();
       ctx.arc(30, yPos + 8, 8, 0, 2 * Math.PI);
@@ -283,7 +283,9 @@ function SponsorSys() {
       ctx.font = '35px Arial';
       ctx.fillText(`Waypoints: ${gpsHistory.current.length}`, 450, yPos + 20);
       yPos += 40;
-
+           
+      ctx.save();
+      ctx.globalAlpha = 0;
       ctx.fillStyle = topicStatus.GPS ? '#00ff00' : '#ff0000';
       ctx.beginPath();
       ctx.arc(30, yPos + 16, 8, 0, 2 * Math.PI);
@@ -294,16 +296,17 @@ function SponsorSys() {
       ctx.font = '35px Arial';
       ctx.fillText(topicStatus.GPS ? 'Active' : 'Offline', 450, yPos + 30);
       yPos += 40;
+      ctx.restore();
 
       ctx.fillStyle = topicStatus.Lidar ? '#00ff00 ' : '#ff0000';
       ctx.beginPath();
-      ctx.arc(30, yPos + 24, 8, 0, 2 * Math.PI);
+      ctx.arc(30, yPos - 12, 8, 0, 2 * Math.PI);
       ctx.fill();
       ctx.fillStyle = '#C1C6C8';
       ctx.font = 'bold 40px Arial';
-      ctx.fillText('Obstacle Detection', 50, yPos + 40);
+      ctx.fillText('Obstacle Detection', 50, yPos);
       ctx.font = '35px Arial';
-      ctx.fillText(topicStatus.Lidar ? 'Scanning' : 'Offline', 450, yPos + 40);
+      ctx.fillText(topicStatus.Lidar ? 'Scanning' : 'Offline', 450, yPos);
     };
 
     const interval = setInterval(drawPlanning, 100);
